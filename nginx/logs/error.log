@@ -1,2 +1,4 @@
 2026/09/30 12:18:08 [error] 25612#25716: *3 connect() failed (10061: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión) while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8082/", host: "localhost"
 2026/09/30 12:21:01 [notice] 26068#26052: signal process started
+2026/09/30 12:28:10 [notice] 23928#11556: signal process started
+2026/09/30 12:28:22 [error] 13860#24640: *38 CreateFile() "C:\Users\Tecsup\lab-load-balancer\nginx/../frontend/favicon.ico" failed (2: El sistema no puede encontrar el archivo especificado), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
