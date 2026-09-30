@@ -1,0 +1,2 @@
+2026/09/30 12:18:08 [error] 25612#25716: *3 connect() failed (10061: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión) while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8082/", host: "localhost"
+2026/09/30 12:21:01 [notice] 26068#26052: signal process started
