@@ -1,0 +1,32 @@
+﻿version: '3.8'
+
+services:
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./frontend:/usr/share/nginx/html:ro
+    depends_on:
+      - backend1
+      - backend2
+      - backend3
+
+  backend1:
+    build: ./backend
+    environment:
+      - PORT=8081
+      - SERVER_NAME=BACKEND 1
+
+  backend2:
+    build: ./backend
+    environment:
+      - PORT=8082
+      - SERVER_NAME=BACKEND 2
+
+  backend3:
+    build: ./backend
+    environment:
+      - PORT=8083
+      - SERVER_NAME=BACKEND 3
